@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Sayfa</title>
+    <style>
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background-color: #fafafa;
+            color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 650px;
+            padding: 2.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h1, h2 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+
+        p {
+            font-size: 1.05rem;
+            font-weight: 300;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .skill-tag {
+            background-color: #eee;
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #e0e0e0;
+        }
+
+        .projects-section {
+            margin-top: 2.5rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .projects-grid {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            width: 45%;
+            background-color: #fff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .project-card h3 {
+            font-size: 1.1rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .contact-section {
+            margin-top: 2.5rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: #222;
+            border: 1px solid #ddd;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #222;
+            color: #fafafa;
+            border-color: #222;
+        }
+        
+        .btn-download {
+            background-color: #222;
+            color: #fff;
+            border-color: #222;
+        }
+
+        .btn-download:hover {
+            background-color: #444;
+            border-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="main-content">
+        <h1>Merhaba, Ben Umut Efe</h1>
+        <p>Kırşehir Ahi Evran Üniversitesi Bilgisayar Programcılığı bölümünde eğitim alıyorum. Geliştirdiğim projelerde ve tasarımlarda aşağıdaki teknolojileri kullanıyorum:</p>
+        
+        <div class="skills">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JS</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Adobe Photoshop</span>
+            <span class="skill-tag">Adobe Animate</span>
+            <span class="skill-tag">SQL</span>
+        </div>
+
+        <div class="projects-section">
+            <h2>Projelerim</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Proje 1</h3>
+                    <p>Yakında eklenecek.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Proje 2</h3>
+                    <p>Yakında eklenecek.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>İletişim</h2>
+            <div class="contact-links">
+                <a href="#" class="btn">Telefon</a>
+                <a href="#" class="btn">E-Posta</a>
+                <a href="#" class="btn">LinkedIn</a>
+                <a href="" download class="btn btn-download">CV İndir</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.getElementById("main-content").classList.add("visible");
+            }, 150);
+        });
+    </script>
+
+</body>
+</html>
