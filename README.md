@@ -13,4 +13,4 @@ Umut Efe
 ## Canlı Önizleme
 Projeyi GitHub Pages üzerinden canlı olarak incelemek için aşağıdaki bağlantıya tıklayabilirsiniz:
 
-[Umut Efe Portfolyo](https://umut-e.github.io/web-portfolio-umut-efe/)
+[Umut Efe Portfolyo](https://umut-e.github.io/web)
